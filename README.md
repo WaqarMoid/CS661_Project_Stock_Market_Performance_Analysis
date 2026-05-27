@@ -1,3 +1,14 @@
+---
+title: CS661 Stock Market Performance Analysis
+emoji: 📈
+colorFrom: blue
+colorTo: indigo
+sdk: streamlit
+sdk_version: 1.46.1
+app_file: Home.py
+pinned: false
+---
+
 # CS661 Project: Stock Market Performance Analysis
 
 **Course:** CSS661 – Big Data Visual Analytics (Summer 2024–2025)  
@@ -74,3 +85,36 @@ scipy
 - Use "git clone https://github.com/the-duckie-2/CS661_Project_Stock_Market_Performance_Analysis.git" to clone the project repository into an empty folder on your local system.
 - Run "pip install -r requirements.txt" to install all the dependencies you will need to deploy the dashboard.
 - Run "streamlit run Home.py" and the dashboard will open.
+
+---
+
+## 6. Hosting & Cloud Deployment
+
+This project requires a stateful persistent Python environment to maintain the interactive charts and process its **1.2 GB of CSV stock data**. As a result, static hosting platforms like **Vercel** or **Netlify** are not suitable because they do not support persistent Python servers or WebSockets.
+
+Instead, the repository has been pre-configured for three easy-to-use, free, and fully-compatible alternatives:
+
+### Option A: Streamlit Community Cloud (Recommended)
+This is the official hosting platform for Streamlit applications, offering fast load times and seamless updates.
+1. Sign up/log in to [Streamlit Community Cloud](https://share.streamlit.io/).
+2. Click **New app** and connect your GitHub account.
+3. Select your repository: `CS661_Project_Stock_Market_Performance_Analysis`.
+4. Set the Main file path to `Home.py`.
+5. Click **Deploy!**
+
+### Option B: Hugging Face Spaces
+This repository contains Hugging Face metadata in the `README.md` which allows it to run automatically on Hugging Face Spaces.
+1. Go to [Hugging Face Spaces](https://huggingface.co/spaces).
+2. Click **Create new Space**.
+3. Set your Space name, select **Streamlit** as the SDK, and choose a free CPU tier.
+4. Select **Import from GitHub** and paste your repository URL: `https://github.com/WaqarMoid/CS661_Project_Stock_Market_Performance_Analysis`.
+5. The Space will automatically build and run the app.
+
+### Option C: Render (Persistent Web Service)
+This repository includes a `render.yaml` configuration file for 1-click Render blueprint deployments.
+1. Sign up/log in to [Render](https://render.com/).
+2. Click **New +** and select **Blueprint**.
+3. Connect your GitHub repository.
+4. Render will automatically detect `render.yaml` and configure a Web Service named `cs661-stock-market-analysis`.
+5. Click **Apply** to deploy the app.
+
