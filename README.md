@@ -94,13 +94,11 @@ This project requires a stateful persistent Python environment to maintain the i
 
 Instead, the repository has been pre-configured for three easy-to-use, free, and fully-compatible alternatives:
 
-### Option A: Streamlit Community Cloud (Recommended)
-This is the official hosting platform for Streamlit applications, offering fast load times and seamless updates.
-1. Sign up/log in to [Streamlit Community Cloud](https://share.streamlit.io/).
-2. Click **New app** and connect your GitHub account.
-3. Select your repository: `CS661_Project_Stock_Market_Performance_Analysis`.
-4. Set the Main file path to `Home.py`.
-5. Click **Deploy!**
+### Option A: Streamlit Community Cloud (Recommended - 1-Click Deployment)
+This is the official hosting platform for Streamlit applications. Click this direct link to deploy:
+- **[Deploy on Streamlit Community Cloud](https://share.streamlit.io/deploy?repository=WaqarMoid/CS661_Project_Stock_Market_Performance_Analysis&branch=main&mainModule=Home.py)**
+
+(You will be asked to sign in with GitHub, and all fields will be pre-filled automatically. Just click the **Deploy!** button).
 
 ### Option B: Hugging Face Spaces
 This repository contains Hugging Face metadata in the `README.md` which allows it to run automatically on Hugging Face Spaces.
